@@ -1,0 +1,156 @@
+.Services {
+  background-color: black;
+  padding-top: 70px;
+}
+.services, h2 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  margin: 50px;
+  font-family: 'Lucida Sans', sans-serif;
+  filter: drop-shadow(-2px 1px 10px red);
+}
+.services, .my-service {
+  color: red;
+  font-size: 3rem;
+}
+
+.thecard {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  perspective: 1000px;
+  background: #000;
+  opacity: 0; /* Initially hidden */
+  animation: slideIn 1s forwards; /* Add animation */
+  animation-delay: 1.5s;
+}
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.thefront, .theback {
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
+.thefront {
+  background-color: black;
+  box-shadow: 4px -4px 5px 0px rgba(255,0,0,1);
+}
+.thefront img {
+  filter: drop-shadow(0px 0px 5px red);
+}
+.theback {
+  --border-size:1rem;
+  background-color: black;
+  color: #fff;
+  transform: rotateY(180deg);
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  padding: 2.3rem 1rem;
+  isolation: isolate;
+}
+.theback::before,
+.theback::after{
+  content: "";
+  position: absolute;
+  overflow: hidden;
+}
+.theback::before{
+  background-image:conic-gradient(var(--clr) 0deg,
+  transparent 60deg,
+  transparent 180deg,
+  var(--clr) 180deg,
+  transparent 240deg);
+  inset: -50%;
+  z-index: -2;
+  animation: border 8s linear infinite;
+}
+@keyframes border{
+  to{
+      transform: rotateZ(-360deg);
+  }
+}
+.theback::after{
+  --inset:0.30rem;
+  background-color: #0b0b0b;
+  inset: var(--inset);
+  border-radius: calc(var(--border-size) - var(--inset));
+  z-index: -1;
+  transition: all 0.35s linear;
+}
+.theback i{
+  font-size: 5rem;
+  margin-inline: auto;
+  color: red;
+  filter: drop-shadow(0px 0px 15px red);
+}
+.theback .title{
+  font-size: 2.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.900rem;
+  margin-block: 2.5rem 1.5rem;
+  color: var(--clr);
+}
+.theback p{
+  font-size: 19px;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Animate the border on hover */
+.theback:hover {
+  border-color: rgba(255, 0, 0, 1); /* Set border color on hover */
+  animation: pulse-border 1.5s infinite; /* Apply the pulse animation */
+  animation-delay: 0.2s; /* Add delay before the animation starts */
+}
+/* Animation for the border */
+@keyframes pulse-border {
+  0%,100%{
+      border-color: black;
+      transform: scale(1);
+  }
+  50% {
+      border-color: rgba(255, 0, 0, 1);
+      transform: scale(1.05);
+      box-shadow: red 0px 2px 70px 4px;
+  }
+}
+
+/* styles for the magic cursor */
+.magic-cursor {
+  position: absolute;
+  width: 70px; /* Adjust size if needed */
+  height: 70px; /* Adjust size if needed */
+  background: radial-gradient(circle, red 10%, black 80%);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0;
+  filter: blur(15px); /* Full blur effect */
+}
+.thecard:hover .magic-cursor {
+  opacity: 1; /* Show when hovering over the card */
+}
+/* Rotate the card on hover */
+.thecard:hover .thefront {
+  transform: rotateY(180deg);
+}
+.thecard:hover .theback {
+  transform: rotateY(0deg);
+}
+
+/* service style ends*/
+/* ----------------------------------------- */

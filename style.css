@@ -1,0 +1,1021 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgth@300;400;500;600;700;800,900&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-image: url("/images/proftfolio\ background\ image.jpeg");
+}
+
+/* header style */
+/* nav{
+    background-color: black;
+} */
+header {
+  transition: top 0.3s; /* Smooth transition for the header */
+  position: fixed; /* Keep the header fixed */
+  width: 100%; /* Full width */
+  top: 0; /* Start at the top */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+.navbar-brand{
+  font-size: xx-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: red;
+  opacity: 0;
+  animation: slideRight 1s ease-in forwards;
+  animation-delay: .2s;
+}
+.navbar-brand:hover{
+  cursor: pointer;
+}
+@keyframes slideRight{
+  0% {
+      transform:translateX(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+.firstname{
+  color: white;
+  /* text-shadow: 0px 0px 10px #0ef,
+               0px 0px 20px #0ef,
+               0px 0px 40px #0ef,
+               0px 0px 80px #0ef; */
+}
+.nav-item{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  color: white; 
+  /* text-shadow: -1px 2px 10px #0ef;  */
+}
+.nav-item a{
+  opacity: 1;
+  animation: slideTop 1.5s 2 both; 
+  animation-delay: calc(0.3s* var(--i));
+}
+@keyframes slideTop{
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.nav-link {
+  position: relative; /* Necessary for the pseudo-element */
+  text-decoration: none; /* Remove default underline */
+  padding: 10px;
+}
+.nav-link:hover {
+  color: white; /* Change color on hover */
+  text-shadow: -3px 5px 15px  #0ef; /* Text shadow on hover */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.nav-link::after {
+  content: ''; /* Pseudo-element for underline */
+  display: block; /* Make it a block element */
+  width: 90%; /* Full width */
+  height: 3.5px; /* Height of the underline */
+  background: #0ef; /* Color of the underline */
+  position: absolute; /* Position it absolutely */
+  left: 0.5; /* Align to the left */
+  bottom: 0px; /* Position it below the text */
+  transform: scaleX(0); /* Initially hidden */
+  transition: transform 0.5s ease; /* Smooth transition */
+  border-radius: 10px; 
+}
+.nav-link:hover::after {
+  transform: scaleX(1); /* Scale to full width on hover */
+}
+/* header style ends*/
+
+
+.modal-dialog{
+    height: 100px;
+    width: 500px;
+}
+.profile-img{
+    background-color:rgb(122, 119, 119); 
+    border-radius: 50%;
+    height: 400px;
+    width: 650px;
+    border: 10px solid;
+    border-color: #fff transparent #fff transparent;
+    box-shadow: 0px 0px 50px  #0ef;
+    animation-name: profile-rotate;
+    animation-duration: 0.5s;
+}
+@keyframes profile-rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+   
+/* profile animation */
+@keyframes  profile-img {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* profile img hover effect */
+.profile-img:hover{
+   animation-name:profile-img;
+   animation-duration: 1.5s;
+   animation-timing-function: ease-in-out;
+}
+.social-media-links{
+    padding: 8px;
+    margin-top: 3px;
+    margin-right: 20px;
+    font-size: 25px;
+    color: #0ef;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #0ef;
+}
+@keyframes popup{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+}
+i:hover{
+    /* transform: scale(1.2); */
+    color: black;
+    background-color: #0ef;
+    filter: drop-shadow(0 0 2px #0ef);
+    animation-name: popup;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+
+}
+.h-button{
+    background-color:transparent;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 10px #0ef;
+    border-radius: 10px;
+   
+}
+.h-button:hover{
+    transform: scale(1.1);
+    color: black;
+    font-weight: 700;
+    background-color:#0ef;
+    transition: linear;
+    transition-duration: 0.5s
+    
+}
+
+ 
+/* contact-form */
+.form-control{
+    height: 60px;
+    background-color:#323946 ;
+    border: none;
+    
+}
+.form-control::placeholder{
+    font-size: 18px;
+    color:rgb(199, 197, 197);
+}
+.col-12{
+    height:300px;
+}
+.contact-button{
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
+    width: 20%;
+    left: 40%;
+    border-radius: 15px;
+    border: black;
+    box-shadow: 0px 0px 5px 5px #0ef;
+    background-color:transparent;
+    font-weight: bold;
+    color: #fff;
+   
+}
+.contact-button:hover{
+   background-color:#0ef;
+   border:none;
+   color: black;
+   transition: linear;
+   transition-duration: 0.5s;
+}
+
+/* about style */
+.aboutme{
+  text-align: justify;
+  
+}
+p{
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* about section end */
+
+/* ----------------------------- */
+/* skill section */
+.skills{
+  background-color:#1f242d ;
+}
+.skill-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px; /* Add padding to the section */
+  justify-content: center;
+  /* margin-bottom: 50px; */
+
+}
+.container1 {
+  width: 100%; /* Full width on smaller screens */
+  max-width: 600px; /* Limit the maximum width */
+  height: auto; /* Allow height to adjust based on content */
+  padding: 30px; /* Adjust padding for better spacing */
+  margin: 0px; /* Add margin for separation */
+  background-color:#323946;
+  margin-bottom: 50px;
+}
+.heading1 {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-shadow: 0px 0px 5px #0ef,
+               0px 0px 2px #0ef,
+               0px 0px 0px #0ef,
+               0px 0px 0px #0ef;
+}
+
+.bar {
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.technical-bars .bar {
+  margin-top: 40px; /* Only need the top margin */
+}
+.technical-bars .bar:first-child {
+  margin-top: 0;
+}
+.technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+.technical-bars .bar .info {
+  margin-bottom: 5px;
+  opacity: 0; /* Start hidden */
+  animation: showText 0.5s ease forwards; /* Fade in text */
+  display: flex;
+}
+.technical-bars .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0; /* Start hidden */
+  animation: showText 0.5s ease 1s forwards; /* Fade in text after bar */
+}
+@keyframes showText {
+  100% {
+      opacity: 1; /* Fade to visible */
+  }
+}
+.technical-bars .bar .progress-line {
+  background-color: gray; /* Background color is gray */
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  height: 5px;
+  /* overflow: hidden; */
+  
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.progress-line span {
+  position: relative;
+  height: 8px;
+  float: left;
+  background-color: #0ef; /* Color of the filled part */
+  width: 10px;
+  border-radius: 10px;
+}
+/* Specific widths for each skill */
+.progress-line .html{
+  width: 90%; /* Adjust width for HTML */
+  animation: html 1.5s;
+}
+.progress-line .css{
+  width: 80%; /* Adjust width for CSS */
+  animation: css 2s;
+}
+.progress-line .javascript{
+  width: 75%; /* Adjust width for JavaScript */
+  animation: javascript 2.5s;
+}
+.progress-line .python{
+  width: 85%; /* Adjust width for Python */
+  animation: python 3s;
+}
+.progress-line .sql{
+  width: 85%; /* Adjust width for SQL */
+  animation: sql 3.5s;
+}
+@keyframes html{
+  0% {
+      width: 0%; /* Start from 0% */
+  }
+  100% {
+      width: 90%; /* End at 100% */
+  }
+}
+@keyframes css{
+  0% {
+      width: 0%; /* Start from 0% */
+  }
+  100% {
+      width: 80%; /* End at 100% */
+  }
+}
+@keyframes javascript{
+  0% {
+      width: 0%; /* Start from 0% */
+  }
+  100% {
+      width: 75%; /* End at 100% */
+  }
+}
+@keyframes python{
+  0% {
+      width: 0%; /* Start from 0% */
+  }
+  100% {
+      width: 85%; /* End at 100% */
+  }
+}
+@keyframes sql{
+  0% {
+      width: 0%; /* Start from 0% */
+  }
+  100% {
+      width: 85%; /* End at 100% */
+  }
+}
+.progress-line span::after{
+  position: absolute;
+  padding: 1px 5px;
+  background-color: #0ef;
+  color:black;
+  font-size: 11px;
+  border-radius: 15px;
+  top: -400%;
+  right: -3%;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+.progress-line .html::after{
+  content: "90%";
+}
+.progress-line .css::after{
+  content: "80%";   
+}
+.progress-line .javascript::after{
+  content: "75%";    
+}
+.progress-line .python::after{
+  content: "85%";   
+}
+.progress-line .sql::after{
+  content: "85%";   
+}
+.progress-line span::before{
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: black;
+  top: -10%;
+  right: 0;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.radial-bars{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  
+}
+.radial-bars .radial-bar{
+  width: 50%;
+  height: 170px;
+  margin-bottom:10px ;
+  position: relative;
+}
+.radial-bars .radial-bar svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+  stroke-width: 10;
+  stop-color: white;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar{
+  100%{
+      stroke-dashoffset: -1;
+  }
+}
+.path{
+  stroke-width: 10;
+  stroke: #0ef;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1.5s 1s linear forwards;}
+.path-2{animation: animate-path2 1.5s 1s linear forwards;}
+.path-3{animation: animate-path3 1.5s 1s linear forwards;}
+.path-4{animation: animate-path4 1.5s 1s linear forwards;}
+@keyframes animate-path1{
+  100%{
+      stroke-dashoffset: 50;
+  }
+}
+@keyframes animate-path2{
+  100%{
+      stroke-dashoffset: 75;
+  }
+}
+@keyframes animate-path3{
+  100%{
+      stroke-dashoffset: 125;
+  }
+}
+@keyframes animate-path4{
+  100%{
+      stroke-dashoffset: 75;
+  }
+}
+.radial-bar .percentage{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 20px;
+  font-weight: 500; 
+  animation: showText 0.5s 1s linear forwards;
+}
+.radial-bar .text{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  bottom: -5px;
+  transform: translateX(-50px);
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+  
+}
+
+/* project section */
+
+/*project */
+.project{
+  background:#1f242d;
+}
+
+.p-card{
+  margin-bottom: 30px;
+  background-color:#1f242d ;
+  border: 0.1px solid rgb(70, 70, 70);
+}
+.my-service{
+  color: #0ef;
+  font-weight: bold;
+}
+
+.p-img{
+  perspective: 500px;
+}
+
+.p-img {
+  background: #16161d;
+  border-radius: 4px;
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform .5s;
+}
+.p-img:hover {
+  transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+}
+
+.p-button {
+  /* in scss with just one variable i can change opacity with rgba(variable, opacity) but in css it's not possible so i have used three seperate variables */
+  /* with hue-rotate color can be changed */
+  --main-color:black;
+  --main-bg-color:hsl(184, 83%, 81%) ;
+  --pattern-color: rgb(4, 208, 223);
+
+  /* change this rotation value */
+  filter: hue-rotate(0deg);
+
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  background: radial-gradient(
+      circle,
+      var(--main-bg-color) 0%,
+      rgba(225, 220, 220, 0) 95%
+    ),
+    linear-gradient(var(--pattern-color) 1px, transparent 1px),
+    linear-gradient(to right, var(--pattern-color) 1px, transparent 1px);
+  background-size:
+    cover,
+    15px 15px,
+    15px 15px;
+  background-position:
+    center center,
+    center center,
+    center center;
+  border-image: radial-gradient(
+      circle,
+      var(--main-color) 0%,
+      rgba(0, 0, 0, 0) 100%
+    )
+    1;
+  border-width: 1px 0 1px 0;
+  color: var(--main-color);
+  padding: 1rem 3rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.p-button:hover {
+  background-size:
+    cover,
+    10px 10px,
+    10px 10px;
+}
+.p-button:active {
+  filter: hue-rotate(250deg);
+}
+
+.p-inside-card-title {
+  color: #fff;
+  line-height: normal;
+  font-weight: 700;
+  font-size: xx-large;
+  text-shadow: 0px 0px 2px #0ef,
+               0px 0px 2px #0ef,
+               0px 0px 0px #0ef,
+               0px 0px 0px #0ef;
+}
+
+.small-desc {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  text-align: justify;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background:#0ef;
+  border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color:black;
+  font-family: courier, sans;
+}
+
+.p-inside-card{
+  display: block;
+  position: relative;
+  min-width: 700px;
+  min-height: 250px;
+  border-radius: 10px;
+  padding: 1.5em 1.2em;
+  margin: 10px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  background:#323946;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-inside-card:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background:#0ef;
+  height: 22px;
+  width: 42px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
+}
+
+.p-inside-card:hover:before {
+  transform: scale(28);
+}
+
+.p-inside-card:hover .small-desc {
+  transition: all 0.5s ease-out;
+  color:black;
+}
+
+.p-inside-card:hover .p-inside-card-title{
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+  text-shadow: 0px 0px 5px black,
+               0px 0px 2px black,
+               0px 0px 0px black,
+               0px 0px 0px black;
+}
+
+.watchnow-modal-header{
+  color: #0ef;
+  background: #1f242d;
+  border-bottom-color: gray;
+}
+.watchnow-modal-header h5{
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family:serif;
+}
+.watchnow-modal-body{
+  background-color: #1f242d;
+}
+.watchnow-modal-footer{
+  background-color: #1f242d;
+  border-top-color: gray;
+}
+
+
+
+
+/* ----------------------------------------- */
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .modal-dialog {
+      height: 80px; /* Smaller height */
+      width: 90%; /* Adjust width to fit smaller screens */
+      margin: 0 auto; /* Center on screen */
+  }
+
+  .profile-img {
+      background-color: rgb(122, 119, 119);
+      border-radius: 50%;
+      height: 350px; /* Reduced size for mobile */
+      width: 400px; /* Reduced size for mobile */
+      border: 5px solid; /* Adjusted border thickness */
+      border-color: #0ef transparent #0ef transparent;
+      box-shadow: 0px 0px 15px #0ef;
+  }
+
+  .social-media-links {
+      padding: 8px; /* Smaller padding */
+      margin-top: 5px;
+      margin-right: 9px; /* Reduced margin for mobile */
+      font-size: 18px; /* Smaller font size */
+      color: #0ef;
+      border: 1.5px solid #0ef;
+      border-radius: 50%;
+      box-shadow: 0 0 3px #0ef;
+  }
+
+  i:hover {
+      color: black;
+      background-color: #0ef;
+      filter: drop-shadow(0 0 2px #0ef);
+      animation-name: popup;
+      animation-duration: 0.5s;
+      animation-timing-function: linear;
+  }
+
+  .h-button {
+      margin-left: 30px;
+      background-color: transparent;
+      color: #fff;
+      width: 180px; /* Reduced width */
+      height: 40px; /* Adjusted height */
+      font-weight: 700;
+      font-size: 14px; /* Smaller font size */
+      letter-spacing: 1px;
+      border: 2px solid #0ef;
+      box-shadow: 0 0 10px #0ef;
+      border-radius: 8px; /* Slightly smaller corners */
+  }
+
+  .h-button:hover {
+      transform: scale(1.05); /* Subtle scaling effect */
+      color: black;
+      font-weight: 700;
+      background-color: #0ef;
+      transition: linear;
+      transition-duration: 0.5s;
+  }
+  .project {
+    background: #1f242d;
+    padding: 10px; /* Add some padding for smaller screens */
+}
+
+.p-card {
+    margin-bottom: 20px;
+    background-color: #1f242d;
+    border: 0.1px solid rgb(70, 70, 70);
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.p-img {
+    perspective: 300px;
+    width: 100%; /* Make it responsive */
+    border-radius: 4px;
+}
+
+.p-img:hover {
+    transform: translateZ(5px) rotateX(15deg) rotateY(15deg); /* Adjust hover effect */
+}
+
+.p-button {
+    padding: 0.5rem 2rem; /* Smaller padding */
+    font-size: 1.2rem; /* Smaller font size */
+    letter-spacing: 0.3rem; /* Adjust letter spacing */
+    width: 100%; /* Stretch button to fit container */
+}
+
+.p-inside-card-title {
+    font-size: large; /* Adjust title size for smaller screens */
+    line-height: 1.2;
+}
+
+.small-desc {
+    font-size: 16px; /* Smaller font size */
+    margin-top: 8px; /* Slightly larger margin for spacing */
+}
+
+.p-inside-card {
+    min-width: 100%; /* Adjust card width */
+    min-height: 200px; /* Adjust card height */
+    padding: 1em; /* Reduce padding */
+    margin: 5px 0; /* Add vertical spacing */
+    border-radius: 8px; /* Slightly smaller radius */
+}
+
+.go-corner {
+    width: 1.5em; /* Adjust corner size */
+    height: 1.5em;
+}
+
+.go-arrow {
+    margin-top: -2px;
+    margin-right: -2px;
+    font-size: 14px; /* Smaller arrow */
+}
+
+.p-inside-card:before {
+    top: -10px;
+    right: -10px;
+    height: 18px;
+    width: 36px;
+}
+
+.p-inside-card:hover:before {
+    transform: scale(20); /* Reduce hover effect size */
+}
+.form-control {
+  height: 50px; /* Reduce height for better fit */
+  background-color: #323946;
+  border: none;
+  font-size: 16px; /* Adjust font size */
+}
+
+.form-control::placeholder {
+  font-size: 14px; /* Smaller font size for placeholders */
+  color: rgb(199, 197, 197);
+}
+
+.col-12 {
+  height: auto; /* Let the height adjust based on content */
+  margin-bottom: 20px; /* Add space between form fields */
+}
+
+.contact-button {
+  height: 45px; /* Reduce button height */
+  width: 50%; /* Make the button full width */
+  border-radius: 10px; /* Smaller radius */
+  box-shadow: 0px 0px 3px 3px #0ef; /* Subtle shadow */
+  background-color: transparent;
+  font-weight: bold;
+  color: #fff;
+  top: 5%;
+  left: 22%;
+}
+
+.contact-button:hover {
+  background-color: #0ef;
+  border: none;
+  color: black;
+  transition: linear;
+  transition-duration: 0.5s;
+}
+
+}
+/* services */
+.Services {
+  background-color:#1f242d;
+  padding-top: 70px;
+}
+.services, h2 {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  /* margin: 50px; */
+  font-family: 'Lucida Sans', sans-serif;
+  filter: drop-shadow(-2px 1px 10px #0ef);
+}
+.services, .my-service {
+  color: #0ef;
+  font-size: 3rem;
+}
+
+.thecard {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  perspective: 1000px;
+  background:#323946;
+  opacity: 0; /* Initially hidden */
+  animation: slideIn 1s forwards; /* Add animation */
+  animation-delay: 1.5s;
+}
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.thefront, .theback {
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
+.thefront {
+  background-color:#323946;
+  box-shadow: 4px -4px 5px 0px #0ef;
+}
+.thefront img {
+  filter: drop-shadow(0px 0px 5px #0ef);
+}
+.theback {
+  --border-size:1rem;
+  background-color: #323946;
+  color: #fff;
+  transform: rotateY(180deg);
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  padding: 2.3rem 1rem;
+  isolation: isolate;
+}
+.theback::before,
+.theback::after{
+  content: "";
+  position: absolute;
+  overflow: hidden;
+}
+.theback::before{
+  background-image:conic-gradient(var(--clr) 0deg,
+  transparent 60deg,
+  transparent 180deg,
+  var(--clr) 180deg,
+  transparent 240deg);
+  inset: -50%;
+  z-index: -2;
+  animation: border 8s linear infinite;
+}
+@keyframes border{
+  to{
+      transform: rotateZ(-360deg);
+  }
+}
+.theback::after{
+  --inset:0.30rem;
+  background-color:#323946;
+  inset: var(--inset);
+  border-radius: calc(var(--border-size) - var(--inset));
+  z-index: -1;
+  transition: all 0.35s linear;
+}
+.theback i{
+  font-size: 5rem;
+  margin-inline: auto;
+  color: #0ef;
+ 
+}
+.theback .title{
+  font-size: 2.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.900rem;
+  margin-block: 2.5rem 1.5rem;
+  color:#0ef;
+}
+.theback p{
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Animate the border on hover */
+.theback:hover {
+  border-color:#0ef; /* Set border color on hover */
+  animation: pulse-border 1.5s infinite; /* Apply the pulse animation */
+  animation-delay: 0.2s; /* Add delay before the animation starts */
+}
+/* Animation for the border */
+@keyframes pulse-border {
+  0%,100%{
+      border-color: black;
+      transform: scale(1);
+  }
+  50% {
+      border-color:#0ef;
+      transform: scale(1.05);
+      box-shadow:#0ef 0px 2px 70px 4px;
+  }
+}
+
+/* Rotate the card on hover */
+.thecard:hover .thefront {
+  transform: rotateY(180deg);
+}
+.thecard:hover .theback {
+  transform: rotateY(0deg);
+}
+
+/* service style ends*/
+/* ----------------------------------------- */

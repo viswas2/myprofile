@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web developer,viswas,pyspiders,web development,
+    python,database,django">
+    <title>protfolio|Viswas</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- social media icons link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="sticky-top bg-dark">
+    <nav id="navbar-example2" class="navbar navbar-expand-md navbar-dark">
+        <div class="container container-fluid">
+            <h1 class="navbar-brand">
+                <span class="firstname">VISWAS B</span> <span class="lastname p-1"></span>
+            </h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav  ms-auto p-3">
+                <li class="nav-item a">
+                  <a class="nav-link active " aria-current="page" href="#home" style="--i:1">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link a" href="#about" style="--i:2">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link a" href="#service" style="--i:3">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link a" href="#skills" style="--i:4">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link a" href="#project" style="--i:5">Project</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link a" href="#contact" style="--i:6">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+        </div>
+    </nav>
+  </header>
+
+
+    <main class="container">
+    <!-- home -->
+    <div class="container  home-container" style="min-height: 100vh; background-color:#1f242d">
+    <div class="row pt-5">
+      <div class="col-md-4">
+        <img src="/images/profile.jpg" class="img-fluid mt-5 object-fit-cover profile-img" alt="viswas">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body text-white m-5">
+          <p class="card-title h1 ">Hello, It's me <span style="color:#0ef;text-shadow: 0 0 10px #0ef;">Viswas</span></p>
+          <p class="card-title h1">I'm a <span class="type-writer" style="color: #0ef;text-shadow: 0 0 10px #0ef;"></span></p>
+          <p style="text-align: justify; font-size: 20px; line-height:1.5;" class="mt-2">I am a software developer and front-end web developer with expertise in building user-friendly, responsive interfaces. My skills encompass HTML, CSS, JavaScript, and modern frameworks, enabling me to create visually appealing and functional web applications. I am passionate about delivering seamless user experiences through clean, efficient code.</p>
+            <a href="https://github.com/Viswas02"><i class="fa-brands fa-github social-media-links"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?igsh=srccwyyqjmao&utm_content=lld7xe2"><i class="fa-brands fa-square-instagram social-media-links"></i></a>
+            <a href="https://www.linkedin.com/in/viswasb26"><i class="fa-brands fa-linkedin social-media-links"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter social-media-links"></i></a>
+            <a href="https://www.facebook.com/viswas.viswas.9421?mibextid=ZbWKwL"><i class="fa-brands fa-square-facebook social-media-links"></i></a><br>
+            <button class="btn mt-5 h-button" type="button" data-bs-toggle="modal" data-bs-target="#model1"> Hire me</button>
+            <button class="btn mt-5 h-button" type="button" data-bs-toggle="modal" data-bs-target="#resumemodal">Download cv</button>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      </div>
+      <!-- modal -->
+        <div id="model1" class="modal fade" data-bs-backdrop="static">
+
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color:#1f242d">
+                    <div class="modal-header">
+                      <h4 class="modal-title text-white">Admin Information:
+                        <span class="m-title" style="color: #0ef;">Viswas B</span>
+                      </h4>
+                        <button class="btn-close" 
+                         data-bs-dismiss="modal" style="border: 2px solid black; background-color: #0ef;"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row text-center">
+                        <div class="col-sm-4">
+                          <img src="/images/profile.jpg" alt="viswas"
+                          style="height:150px; width: 150px;">
+                    </div>
+                    <div class="col-sm-8 mt-4 ">
+                      <table class="table table-bordered mt-3 mt-sm-0 ">
+                        <tbody>
+                          <tr>
+                            <th class=" text-white">Name</th>
+                            <td class=" text-white">Viswas B</td>
+                          </tr>
+                          <tr>
+                            <th class=" text-white">Mobile</th>
+                            <td class=" text-white">8015963714</td>
+                          </tr>
+                          <tr>
+                            <th class="text-white">Email</th>
+                            <td>
+                              <a href="#" target="#" class="text-white">viswasb26@gmail.com</a
+                              >
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                   <div class="modal-footer">
+                    <button class="btn btn-info" data-bs-dismiss="modal">Back</button>
+                   </div>
+                </div>
+            </div>
+          </div>
+  </div
+ 
+         
+<!-- container end -->
+</div>
+<!-- resume modal -->
+<div id="resumemodal" class="modal fade" data-bs-backdrop="static">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollabe">
+      <div class="modal-content" style="background-color:#1f242d;">
+          <div class="modal-header">
+              <h3 class="modal-title" style="color: #0ef;">Resume</h3>
+              <button class="btn-close btn-white" data-bs-dismiss="modal"
+              style="background-color: white;"></button>
+          </div>
+          <div class="modal-body mx-5">
+            <embed src="/images/viswas front-end main.pdf" type="application/pdf" alt="intern" height="320px" width="380px">
+          </div>
+         <div class="modal-footer">
+          <button class="btn btn-info" data-bs-dismiss="modal">Back</button>
+         </div>
+      </div>
+  </div>
+</div>
+<!-- end of homepage -->
+    <!-- about -->
+     <div class="container" style="height: 100vh;
+    width: 100vw; background-color:#1f242d">
+    <div class="h1 text-center text-white mt-3">About <span style="color: #0ef;">Me!!</span>
+       <div class="row">
+        <div class="col-md-8">
+          <p style="line-height: 1.5; margin-top: 20px;">
+            I am a dedicated Software Developer with strong expertise in front-end development, 
+            coupled with solid experience in MySQL and Oracle SQL for efficient database
+            management and querying. I have a foundational understanding of .NET and ADO.NET,
+            enabling me to contribute effectively to back-end and full-stack projects. I have
+            also completed a comprehensive course in Python Full Stack Development, which has
+            equipped me with end-to-end development skills, from designing intuitive user 
+            to deploying scalable web applications. 
+          </p>
+          
+        </div>
+        <div class="col-md-4 aboutimg" >
+            <img src="/images/viswas.jpg.jpg" alt="aboutimg" width="350px" height="400px">
+        </div>
+       </div>
+      </div>
+    </div>
+    
+    
+   </div>
+    <!-- container end -->
+  </div>
+    <!-- services -->
+
+      <div id="service" class="Services text-white container" style="min-height: 100vh;">
+        <h2 class="text-center pt-4">My <span class="my-service">Services</span></h2>
+        <div class="row g-4">
+            <!-- Web Development Card -->
+            <div class="col-md-4 maincontainer">
+                    <div class="card service-card thecard" style="--i: 0;">
+                        <div class="thefront">
+                          <h3 class="text-center mt-3 fw-bolder" style="color: #0ef;">Website development</h3>
+                          <img src="images/card-img-1.png" alt="" height="92%" width="95%">
+                        </div>
+                        <div class="theback" style="--clr:#e31010;">
+                          <div class="card-header c-h">
+                            <i class="fa-solid fa-code"></i>
+                            <!-- <h3 class="title">Web Development</h3> -->
+                          </div>
+                            <div class="card-body c-b">
+                                <p class="card-text text-start lh-base">Creating responsive and dynamic websites using modern technologies like HTML, CSS, JavaScript, and frameworks like Django and React.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- UI/UX Design Card -->
+            <div class="col-md-4 maincontainer">
+                    <div class="card service-card thecard" style="--i: 1;">
+                      <div class="thefront">
+                        <h3 class="text-center mt-3 fw-bolder" style="color: #0ef;">UI & UX DESIGN</h3>
+                        <img src="/images/card-img-2.png" alt="" height="90%" width="90%">
+                      </div>
+                        <div class="theback" style="--clr:#ff0e0e;">
+                          <div class="card-header c-h">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3 class="title">UI/UX Design</h3>
+                          </div>
+                          <div class="card-body c-b">
+                              <p class="card-text text-start lh-base">Designing user-friendly interfaces and experiences that prioritize usability and aesthetics, ensuring an engaging user journey.</p>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- Software Development Card -->
+            <div class="col-md-4 maincontainer">
+                    <div class="card service-card thecard" style="--i: 2;">
+                      <div class="thefront">
+                        <h3 class="text-center mt-3 fw-bolder" style="color: #0ef;">software developer</h3>
+                        <img src="/images/card-img-3.png" alt="" height="90%" width="90%">
+                      </div>
+                      <div class="theback" style="--clr:#dd0707;">
+                        <div class="card-header c-h">
+                          <i class="fa-brands fa-python"></i>
+                          <h3 class="title">Software Development</h3>
+                        </div>
+                        <div class="card-body c-b">
+                            <p class="card-text text-start lh-base">Developing robust software solutions tailored to the business needs and utilizing languages such as Python and SQL for backend development.</p>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+        </div>
+      <!-- service end -->
+     </div>
+    <!-- skills -->
+    <div id="skills" class="skills text-white" style="min-height: 100vh;">
+      <h1 class="text-center pt-4"><span class="my-service" style="color: #0ef;text-shadow: 0px 0px 10px #0ef;">Skills</span></h1>
+      <div class="skill-section">
+        <div class="container1">
+          <h1 class="heading1">Techical Skills</h1>
+          <div class="technical-bars">
+            <div class="bar">
+              <i class="fa-brands fa-html5" style="color: orange;"></i>
+              <div class="info">
+                <span>HTML</span>
+              </div>
+              <div class="progress-line">
+                <span class="html"></span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="fa-brands fa-css3-alt" style="color: skyblue;"></i>
+              <div class="info">
+                <span>CSS</span>
+              </div>
+              <div class="progress-line">
+                <span class=" css"></span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="fa-brands fa-js" style="color: #FFD43B;"></i>
+              <div class="info">
+                <span>JavaScript</span>
+              </div>
+              <div class="progress-line">
+                <span class="javascript"></span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="fa-brands fa-python" style="color: #FFD43B;"></i>
+              <div class="info">
+                <span>Python</span>
+              </div>
+              <div class="progress-line">
+                <span class="python"></span>
+              </div>
+            </div>
+            <div class="bar">
+              <i class="fa-solid fa-database" style="color: #74C0FC;"></i>
+              <div class="info">
+                <span>SQL</span>
+              </div>
+              <div class="progress-line">
+                <span class="sql"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container1">
+          <h1 class="heading1">Professional Skills</h1>
+          <div class="radial-bars mt-5">
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">90%</div>
+              <div class="text">Creativity</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">85%</div>
+              <div class="text">Communication</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">75%</div>
+              <div class="text">Problem Solving</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">85%</div>
+              <div class="text">Team Work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    <!-- project -->
+    <!-- ProjectSection -->
+    <div id="project" class="project text-white" style="min-height: 100vh;">
+      <div class="p-heading  pt-5">
+        <h1 class="text-center mt-4 fw-bold">Latest <span class="my-service">Projects</span></h1>
+      </div>                  
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card p-card mb-5  text-white" style="min-width:100%; min-height: 400px;">
+              <div class="row g-0 ">
+                <div class="col-md-5">
+                  <img src="https://www.mishainfotech.com/images/drive.jpg" class="img-fluid rounded-start p-img" alt="web" style="height: 100%;">
+                </div>
+                <div class="col-md-7 d-flex flex-column justify-content-end latest-project-body">
+                  <div class="card-body flex-grow-1">                      
+                    <div class="p-inside-card">
+                      <h5 class="p-inside-card-title">Car Driving School Management-System</h5>
+                      <p class="small-desc">
+                        The Car Driving School Management System is a web-based platform that streamlines the operations of driving schools. It manages student registrations, instructor schedules, and lesson bookings efficiently. The system includes features like payment tracking, progress monitoring, and automated reminders. With an intuitive user interface, it ensures ease of use for both staff and learners. Built with modern technologies, it enhances operational efficiency and customer satisfaction. This project simplifies managing and scaling driving school operations.
+                      </p>
+                      <div class="go-corner">
+                        <div class="go-arrow">→</div>
+                      </div>
+                    </div>
+                    <p class="card-text"><small class="text">Last updated 2 months ago <span class="badge bg-success">new</span></small></p>
+
+                    <button type="button" class="btn p-button mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                      Watch now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade watchnowModal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header watchnow-modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Car Driving School Management-System</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body watchnow-modal-body">
+                            <iframe width="480" height="500" src="/images/cdms demo.mp4.mp4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
+                          <div class="modal-footer  watchnow-modal-footer">
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card p-card mb-5  text-white" style="min-width:100%; min-height: 400px;">
+              <div class="row g-0 h-100">
+                <div class="col-md-5">
+                  <img src="/images/magicpin project.jpg" class="img-fluid rounded-start p-img" alt="web" style="height: 100%;">
+                </div>
+                <div class="col-md-7 d-flex flex-column">
+                  <div class="card-body flex-grow-1">
+                    <div class="p-inside-card">
+                      <h5 class="p-inside-card-title">Magicpin Food Delivery Application</h5>
+                      <p class="small-desc">
+                        Magicpin is a lifestyle app that connects users with local businesses, including food delivery, restaurants, and cafes. It offers personalized recommendations based on user preferences and location. Users can order food online, earn rewards, and access exclusive discounts on meals and beverages. Magicpin also provides a platform for reviews and photo sharing to enhance the dining experience. Its rewards program lets users redeem "MagicPoints" for cashback or other benefits.
+                      </p>
+                      <div class="go-corner">
+                        <div class="go-arrow">→</div>
+                      </div>
+                    </div>
+                    <p class="card-text"><small class="text">Last updated 3 months ago <span class="badge bg-success">new</span></small></p>
+
+                    <button type="button" class="btn p-button mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                      Watch now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade watchnowModal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header watchnow-modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Magicpin Food Delivery Application</h5>
+                            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body watchnow-modal-body">
+                            <iframe width="350" height="500" src="food cook planner.mp4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
+                          <div class="modal-footer  watchnow-modal-footer">
+                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card p-card mb-5 text-white" 
+            style="min-width:100%; min-height: 400px;">
+              <div class="row g-0 h-100">
+                <div class="col-md-5">
+                  <img src="/images/auction project img.jpg" class="img-fluid rounded-start p-img" alt="web" style="height: 100%;">
+                </div>
+                <div class="col-md-7 d-flex flex-column">
+                  <div class="card-body flex-grow-1">
+                    <div class="p-inside-card">
+                      <h5 class="p-inside-card-title">Online Auction-System</h5>
+                      <p class="small-desc">
+                        The Online Auction System project is a web-based platform designed to facilitate online bidding for goods and services. It enables users to create accounts, list items for auction, and place bids securely. Features include user authentication, real-time bid updates, and auction timers. The system uses a user-friendly interface for seamless navigation. Built using modern web technologies, it ensures scalability and robust performance. This project enhances transparency and convenience in auction processes.
+                      </p>
+                      <div class="go-corner">
+                        <div class="go-arrow">→</div>
+                      </div>
+                    </div>
+                    <p class="card-text"><small class="text">Last updated 2 months ago <span class="badge bg-success">new</span></small></p>
+
+                    <button type="button" class="btn p-button mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                      Watch now
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade watchnowModal" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header watchnow-modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Online Aution-System</h5>
+                          <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body watchnow-modal-body">
+                          <iframe width="480" height="500" src="/images/auction system demo mp.4.mp4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer  watchnow-modal-footer">
+                          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev  " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- project container end -->
+    <!-- contact -->
+     <div class="container" style="height: 100vh;
+    width: 100vw; background-color: #1f242d;">
+    <p class="h1 text-white text-center
+    fw-bold p-4">Contact <span style="color: #0ef;">Me!!</span></p>
+    <div class="row">
+      <div class="col-6">
+        <form action="" style="background-color: transparent;">
+          <input type="text" placeholder="Frist Name" class="form-control"
+          required>
+      </div>
+      <div class="col-6">
+        <input type="text" placeholder="Last Name" class="form-control"
+        required>
+      </div>
+      <!-- row end -->
+    </div>
+    <div class="row mt-3">
+      <div class="col-6">
+        <form action="">
+          <input type="number" placeholder="+91 0000000000" class="form-control"
+          required>
+      </div>
+      <div class="col-6">
+        <input type="email" placeholder="you@awesome.com" class="form-control"
+        required>
+      </div>
+      <!-- row end -->
+    </div>
+    <div class="row mt-3">
+      <div class="col-12">
+        <textarea placeholder="Your Massage" class="form-control h-100"></textarea>
+      </div>
+      <!-- row end -->
+    </div>
+    <button type="button" class="contact-button">Send Message</button>
+    
+
+  </form>
+    <!-- contact end -->
+    </div>
+  </main>
+
+
+
+<!-- bootstrap js file -->
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+
+<!-- <script src="main.js"></script> -->
+</body>
+</html>
