@@ -234,6 +234,10 @@ p{
   font-size: 22px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/* .aboutimg{
+    padding-right: 100px;
+} */
+
 
 
 /* about section end */
@@ -881,19 +885,20 @@ p{
 /* services */
 .Services {
   background-color:#1f242d;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 .services, h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
-  font-weight: 500;
+  font-weight: bold;
   /* margin: 50px; */
   font-family: 'Lucida Sans', sans-serif;
   filter: drop-shadow(-2px 1px 10px #0ef);
+
 }
 .services, .my-service {
   color: #0ef;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .thecard {
